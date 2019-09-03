@@ -4,6 +4,10 @@ all: $(FILES)
 	python jemdoc.py $(FILES)
 	mv *.html ../.
 
+target:
+	python jemdoc.py $(FILE)
+	mv *.html ../.
+
 clean:
 	rm -v *~
 
